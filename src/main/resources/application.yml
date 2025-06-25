@@ -3,6 +3,7 @@ spring:
     name: FirstServer
   datasource:
     url: jdbc:mariadb://localhost/memo
+#     >>이 위치로 DB를 찾아가서 데이터 전달 localhost= 나자신
     username: root
     password: green502
 

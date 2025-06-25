@@ -1,8 +1,6 @@
 package com.green.firstserver;
 
-import com.green.firstserver.model.MemoGetOneRes;
-import com.green.firstserver.model.MemoGetRes;
-import com.green.firstserver.model.MemoPostReq;
+import com.green.firstserver.model.*;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
@@ -15,4 +13,6 @@ public interface MemoMapper {
     int insMemo(MemoPostReq req);
     List<MemoGetRes> selMemoList();
     MemoGetOneRes selMemo(int id);
+    int updMemo(MemoPutReq req);
+    int delMemo(int id);
 }
